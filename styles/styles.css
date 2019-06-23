@@ -25,6 +25,11 @@ nav .nav-wrapper {
     width: 13vw;
     height: auto;   
 }
+.side-img{
+    /* position: absolute; */
+    margin-top: 20%;
+    margin-left: 28%;
+}
 .description{
     font-family: 'Lucida Sans';
     color: #121212;
@@ -58,6 +63,12 @@ nav .nav-wrapper {
 }
 .m-0{
     margin: 0;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-40{
+    margin-bottom:40px;
 }
 #general{
     position: relative;
@@ -114,7 +125,7 @@ nav .nav-wrapper {
     width: 3.2rem;
     height: 3px;
     margin-left: 10px;
-    background-color: var(--blue);
+    background-color: var(--yellow);
 }
 .column .card-title{
     padding: 4px;
@@ -135,9 +146,12 @@ nav .nav-wrapper {
 .f5{
     font-weight: 500;
 }
-.determinate{
-    color: #E2E912;
-}
-.progress{
-    color: #E2E912 !important;
-}
+@media (max-width: 600px) {
+    .column {
+      flex: 100% !important;
+      max-width: 100% !important;
+    }
+    .activator{
+        font-size: 94% !important;
+    }
+  }
